@@ -19,15 +19,17 @@ nav {
     font-weight: 800;
     color: #000000;
 }
+
 .section-title {
     color: #181818;
     text-align: center;
     font-size: 35px;
     font-weight: 700;
- 
+
 
 }
-.section-desc{
+
+.section-desc {
     color: #757575;
     text-align: center;
     font-size: 18px;
@@ -81,7 +83,8 @@ nav a {
     justify-content: space-between;
 
 }
-.banner-content{
+
+.banner-content {
     max-width: 500px;
 }
 
@@ -107,65 +110,110 @@ nav a {
     margin-top: 5px;
     margin-bottom: 30px;
 }
+
 .about {
     padding: 50px;
     border-radius: 10px;
-    background: #fff8f3;   
-    
+    background: #fff8f3;
+
 }
-main{
+
+main {
     max-width: 1140px;
     margin: 0 auto;
 }
-main section{
+
+main section {
     margin-top: 130px;
 }
-.about-info-container{
+
+.about-info-container {
     display: flex;
     justify-content: space-around;
 
 }
+
 .about-info-item {
     text-align: center;
 }
-.info-title{
+
+.info-title {
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     color: #757575;
 }
-.info-desc{
+
+.info-desc {
     font-style: bold;
     font-weight: 700;
-    
+
 }
 
-#what-i-do{
-    
+#what-i-do {
+
     padding: 30px 150px;
-    
-    
-}
-   
 
-.skill-container{
+
+}
+
+
+.skill-container {
     display: flex;
     gap: 20px;
 }
-.skill{
+
+.skill {
     padding: 30px;
     border-radius: 5px;
     background: #fff;
     box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
- 
+
 }
-.skill-descrip{
-   color: #757575;
+
+.skill-descrip {
+    color: #757575;
 }
-.resume-column-title{
-    color: #474747;
+
+.resume-column-title {
+    color: #000000;
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.resume-container {
+    display: flex;
+    gap: 70px;
+
+}
+
+.resume-item-desc {
+    color: #757575;
+
+}
+
+.resume-ins-title {
+    color: #201e1ea4;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 0px;
+
+}
+
+.resume-item-title {
+    color: #111111;
+    font-size: 25px;
+    font-weight: 400;
+
+}
+
+.resume-container hr {
+
+    margin: 30px;
+}
+.download-cv{
+    text-align: center;
+    margin-top: 50px;
 }
