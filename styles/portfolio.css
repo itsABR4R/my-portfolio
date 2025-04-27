@@ -1,21 +1,26 @@
-body{
-    
+body {
+
     font-family: 'Open Sans', sans-serif;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 200px;
 }
-.text-primary{
+
+.text-primary {
     color: #fd6e0a;
 }
-.nav-title{
+
+.nav-title {
     font-size: 45px;
     font-weight: 800;
     color: #000000;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #fd6e0a;
     color: #ffffff;
     border: 0;
@@ -25,22 +30,41 @@ nav{
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
-  
+
 
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
- 
+
 }
-nav li{
+
+nav li {
     list-style: none;
     margin-right: 50px;
 
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: #474747;
     font-size: 20px;
     font-weight: 600;
+}
+
+.header {
+    background-color: #fff8f3;
+}
+
+.banner {
+    padding: 3px 30px 30px 30px 150px;
+    display: flex;
+    align-items: center;
+
+}
+
+.banner .profile-image {
+    width: 400px;
+    height: 400px;   
 }
