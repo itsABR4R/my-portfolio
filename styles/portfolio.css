@@ -6,8 +6,12 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin: 0 200px;
+    align-items: flex-start;
+    padding: 20px 40px;
+    margin: 0 -30px;
+}
+.menu{
+    
 }
 
 .text-primary {
@@ -34,6 +38,20 @@ nav {
 }
 
 .btn-primary {
+    background-color: #fd6e0a;
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    padding: 15px 35px;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    margin-right: 10px;
+
+
+}
+.btn-primary2 {
     background-color: #fd6e0a;
     color: #ffffff;
     border: 0;
