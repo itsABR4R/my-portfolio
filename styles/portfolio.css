@@ -59,7 +59,10 @@ nav {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
+a.btn-primary {
+    color: inherit; /* Inherits the color from the button */
+    text-decoration: none; /* Removes underline */
+}
 .btn-primary:hover, .btn-primary2:hover {
     background-color: #e65a00;
 }
@@ -248,37 +251,42 @@ main section {
 
 footer {
     display: flex;
-    flex-wrap: wrap;
     background: #fff8f3;
-    padding: 80px 20px;
+    padding: 130px 200px;
     margin-top: 100px;
-    gap: 50px;
-    justify-content: center;
+    gap: 100px;
 }
 
 .footer-column {
-    flex: 1 1 300px;
-}
+    width: 50%;
 
-.social-links a {
-    margin-right: 20px;
 }
-
-.section-title-footer {
+.social-links a{
+    margin-right: 25px;
     text-align: left;
-    font-size: 30px;
+}
+.section-desc{
+    text-align: left;
+}
+.section-title-footer {
+    color: #181818;
+    text-align: left;
+    font-size: 35px;
+    font-weight: 700;
 }
 
 .contact input[type="text"],
 .contact input[type="email"],
 textarea {
     display: block;
-    margin-bottom: 20px;
-    padding: 15px 20px;
-    width: 100%;
+    margin-bottom: 23px;
+    padding: 18px 35px;
+    color: #757575;
     border-radius: 5px;
-    border: 1px solid #ccc;
     background-color: #fff;
+    border: 0;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+    width: 100%;
 }
 
 /* === Responsive Media Queries === */
