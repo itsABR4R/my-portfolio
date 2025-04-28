@@ -25,8 +25,6 @@ nav {
     text-align: center;
     font-size: 35px;
     font-weight: 700;
-
-
 }
 
 .section-desc {
@@ -213,13 +211,47 @@ main section {
 
     margin: 30px;
 }
-.download-cv{
+
+.download-cv {
     text-align: center;
     margin-top: 50px;
 }
+
 footer {
     display: flex;
     background: #fff8f3;
     padding: 130px 200px;
     margin-top: 100px;
+    gap: 100px;
+}
+
+.footer-column {
+    width: 50%;
+
+}
+.social-links a{
+    margin-right: 25px;
+    text-align: left;
+}
+.section-desc{
+    text-align: left;
+}
+.section-title-footer {
+    color: #181818;
+    text-align: left;
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+textarea {
+    display: block;
+    margin-bottom: 23px;
+    padding: 18px 35px;
+    color: #757575;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 0;
+    width: 100%;
 }
