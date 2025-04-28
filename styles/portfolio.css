@@ -9,12 +9,17 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    padding: 20px 40px;
-    margin: 0;
+    margin: 0 150px;
+    
 }
-
-.menu {}
+.menu{
+    display: flex; 
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    margin: 0 0px 0 0px;
+}
 
 .text-primary {
     color: #fd6e0a;
@@ -80,18 +85,22 @@ nav a {
 
 .header {
     background-color: #fff8f3;
-    background-image: url('../images/header_bg.png');
+    background-image: url('../images/header_bg.png'), url('../images/developer.png');
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom right, top left;
+    background-size: 53% auto, contain;
+    padding-bottom: 0px; /* ADD padding-bottom here */
 }
 
+
 .banner {
+    padding: 0px 70px 0 150px; /* top right bottom left */
     display: flex;
-    align-items: center;
+    align-items: flex-end; /* align profile image and text to bottom */
     justify-content: space-between;
-    padding: 50px;
-    flex-wrap: wrap;
+    height: 500px; /* <<< fixed height instead of full screen */
 }
+
 
 .banner-content {
     max-width: 500px;
@@ -100,10 +109,12 @@ nav a {
 
 .profile-image {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
     border-radius: 10px;
+    margin-right: 0; /* <<< Move the image fully to the right */
 }
+
 
 .banner-greetings {
     font-size: 35px;
