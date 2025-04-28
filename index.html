@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="styles/portfolio.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9eb8ea539a.js" crossorigin="anonymous"></script>
-    
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
 <body>
@@ -27,8 +29,9 @@
                 <h1 class="banner-title">Abrar Jahin</h1>
                 <p class="banner-text">A Web Developer with a passion for creating beautiful and functional websites.
                 </p>
-                <button class="btn-primary"  aria-label="Download CV"><i class="fa-solid fa-download"></i> Download CV
-                <button class="btn-primary" aria-label="Contact"><i class="fa-solid fa-phone"></i> Contact</button>
+                <button class="btn-primary" aria-label="Download CV"><i class="fa-solid fa-download"></i> Download CV
+                    <button id="contact-btn" class="btn-primary" aria-label="Contact"><i class="fa-solid fa-phone"></i> Contact</button>
+
             </div>
             <img class="profile-image" src="images/mypic.png" alt="">
         </div>
@@ -72,36 +75,45 @@
                 strong understanding of web design principles and best practices, ensuring that my websites are not only
                 functional but also visually appealing.
                 I am proficient in using various front-end frameworks such as React and Bootstrap, which allows me to
-                Git to collaborate effectively with other developers. Additionally, I have experience in deploying web applications to platforms such as Netlify and Vercel, ensuring seamless delivery and accessibility.
+                Git to collaborate effectively with other developers. Additionally, I have experience in deploying web
+                applications to platforms such as Netlify and Vercel, ensuring seamless delivery and accessibility.
             </p>
-            <div class="skill-container"><div class="skill">
-                <img src="images/icons/js.png" alt="">
-                <h3 class="skill-title">Vanilla Javascript</h3>
-                <p class="skill-descrip">
-                    I have a strong understanding of JavaScript, including ES6 features, DOM manipulation, and event handling. I can create interactive web applications using JavaScript and its various libraries.
-                </p>
+            <div class="skill-container">
+                <div class="skill">
+                    <img src="images/icons/js.png" alt="">
+                    <h3 class="skill-title">Vanilla Javascript</h3>
+                    <p class="skill-descrip">
+                        I have a strong understanding of JavaScript, including ES6 features, DOM manipulation, and event
+                        handling. I can create interactive web applications using JavaScript and its various libraries.
+                    </p>
+                </div>
+                <div class="skill">
+                    <img src="images/icons/react.png" alt="">
+                    <h3 class="skill-title">React</h3>
+                    <p class="skill-descrip">
+                        I have experience in building single-page applications using React. I am familiar with React
+                        hooks, state management, and component lifecycle methods. I can create reusable components and
+                        manage application state effectively.
+                    </p>
+                </div>
+                <div class="skill">
+                    <img src="images/icons/nodejs.png" alt="">
+                    <h3 class="skill-title">Node.js</h3>
+                    <p class="skill-descrip">
+                        I have experience in building server-side applications using Node.js and Express.js. I can
+                        create RESTful APIs and handle server-side logic efficiently. I am familiar with middleware,
+                        routing, and database integration.
+                    </p>
+                </div>
+                <div class="skill">
+                    <img src="images/icons/mongo.png" alt="">
+                    <h3 class="skill-title">MongoDB</h3>
+                    <p class="skill-descrip">
+                        I have experience in working with MongoDB, a NoSQL database. I can create and manage databases,
+                        collections, and documents. I am familiar with CRUD operations and data modeling in MongoDB.
+                    </p>
+                </div>
             </div>
-            <div class="skill">
-                <img src="images/icons/react.png" alt="">
-                <h3 class="skill-title">React</h3>
-                <p class="skill-descrip">
-                    I have experience in building single-page applications using React. I am familiar with React hooks, state management, and component lifecycle methods. I can create reusable components and manage application state effectively.
-                </p>
-            </div>
-            <div class="skill">
-                <img src="images/icons/nodejs.png" alt="">
-                <h3 class="skill-title">Node.js</h3>
-                <p class="skill-descrip">
-                    I have experience in building server-side applications using Node.js and Express.js. I can create RESTful APIs and handle server-side logic efficiently. I am familiar with middleware, routing, and database integration.
-                </p>
-            </div>
-            <div class="skill">
-                <img src="images/icons/mongo.png" alt="">
-                <h3 class="skill-title">MongoDB</h3>
-                <p class="skill-descrip">
-                    I have experience in working with MongoDB, a NoSQL database. I can create and manage databases, collections, and documents. I am familiar with CRUD operations and data modeling in MongoDB.
-                </p>
-            </div></div>
         </section>
         <section>
             <h3 class="section-title">A Summary Of My Resume</h3>
@@ -112,7 +124,9 @@
                         <h2 class="resume-item-title">Bachelors In Computer Science</h2>
                         <h3 class="resume-ins-title">United International University</h3>
                         <p class="resume-item-desc">
-                            I am currently pursuing a Bachelor's degree in Computer Science at United International University. I have completed several courses related to web development, programming languages, and software engineering principles.
+                            I am currently pursuing a Bachelor's degree in Computer Science at United International
+                            University. I have completed several courses related to web development, programming
+                            languages, and software engineering principles.
                         </p>
                     </div>
                 </div>
@@ -122,38 +136,46 @@
                         <h2 class="resume-item-title">Web Developer Intern</h2>
                         <h3 class="resume-ins-title">Tech Company</h3>
                         <p class="resume-item-desc">
-                            I completed a web development internship at Tech Company, where I worked on various projects involving front-end and back-end development. I gained hands-on experience in using modern web technologies and collaborating with a team of developers.
+                            I completed a web development internship at Tech Company, where I worked on various projects
+                            involving front-end and back-end development. I gained hands-on experience in using modern
+                            web technologies and collaborating with a team of developers.
                         </p>
+                    </div>
                 </div>
-            </div>
-            
+
         </section>
         <div class="download-cv">
-            <button class="btn-primary"><i class="fa-solid fa-download"></i> Download CV
-        </div>
+            <!-- Second Download Button with a download link -->
+            <a href="AbrarJahinCV.pdf" download>
+                <button class="btn-primary"><i class="fa-solid fa-download"></i> Download CV</button>
+            </a>
 
+        </div>
     </main>
     <footer>
-            <div class="footer-column">
-                <h3 class="section-title-footer">Let's Connect</h3>
-                <p class="section-desc">Please fill out the form on this section to contact with me or call between 9:00 A.M and 8.00 P.M ET, Monday through Friday.</p>
-                <div class="social-links">
-                    <a href=""><img src="images/icons/facebook.png" alt=""></a>
-                    <a href=""><img src="images/icons/twitter.png" alt=""></a>
-                    <a href=""><img src="images/icons/insta.png" alt=""></a>
-                </div>
+        <div class="footer-column">
+            <h3 class="section-title-footer">Let's Connect</h3>
+            <p class="section-desc">Please fill out the form on this section to contact with me or call between 9:00 A.M
+                and 8.00 P.M ET, Monday through Friday.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/abrar.jahin.3382" target="_blank" rel="noopener noreferrer"><img src="images/icons/facebook.png" alt=""></a>
+                <a href=""><img src="images/icons/twitter.png" alt=""></a>
+                <a href=""><img src="images/icons/insta.png" alt=""></a>
             </div>
-            <div class="footer-column">
-                <h3 class="section-title-footer">Message Me</h3>
-                <form class="contact" action="">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea name="" placeholder="Message Me" id="" cols="30" rows="10"></textarea>
-                    <input class="btn-primary" type="submit" value="Submit">
-                </form>
-            </div>
+        </div>
+        <div class="footer-column">
+            <h3 class="section-title-footer">Message Me</h3>
+            <form class="contact" id="contact-form">
+                <input type="text" name="user_name" placeholder="Your Name" required>
+                <input type="email" name="user_email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Message Me" cols="30" rows="10" required></textarea>
+                <input class="btn-primary" type="submit" value="Submit">
+            </form>
+        </div>
     </footer>
     <script src="scripts/download.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+
 </body>
 
 </html>
